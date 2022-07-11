@@ -8,7 +8,7 @@
 </div>
 
 # 简介
-利用github action 实现自动健康打卡
+利用github action 实现自动健康打卡1
 
 > 大家有条件的尽量把代码下载到自己仓库运行，最近github action风控较严，觉得有用的话给个star就好啦
 
