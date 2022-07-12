@@ -1,6 +1,11 @@
 name: AutoCheck
 
 on:
+  workflow_dispatch:
+  push:
+  pull_request:
+  watch:
+    types: [ started ]
   schedule:
     - cron: 0 21,23,3 * * *
 
