@@ -8,7 +8,7 @@ import random
 from notify.tgpush import post_tg
 from notify.Dingpush import dingpush
 
-#签到程序
+#签到
 class LoginError(Exception):
     """Login Exception"""
     pass
