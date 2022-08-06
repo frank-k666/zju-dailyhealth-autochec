@@ -16,6 +16,7 @@ def get_weather(city = "杭州"):
   return weather['weather'], math.floor(weather['temp'])
 
 def get_count( start_date = "2022-02-13" ):
+  today = datetime.now()
   delta = today - datetime.strptime(start_date, "%Y-%m-%d")
   return delta.days
 
