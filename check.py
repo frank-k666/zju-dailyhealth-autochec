@@ -1,7 +1,7 @@
 import requests
 import re
 import json
-import datetime
+from datetime import date, datetime
 import time
 import math
 import os
