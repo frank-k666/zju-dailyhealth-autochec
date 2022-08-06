@@ -58,7 +58,7 @@ def take_out_json(content):
 
 def get_date():
     """Get current date"""
-    today = datetime.date.today() 
+    today = date.today() 
     return "%4d%02d%02d" % (today.year, today.month, today.day)
 
 
