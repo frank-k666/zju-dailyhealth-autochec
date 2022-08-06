@@ -349,9 +349,9 @@ class HealthCheckInHelper(ZJULogin):
             else:
                 print("telegram推送未配置,请自行查看签到结果")
             if self.DD_BOT_TOKEN:
-                ding= dingpush('今日小07已为你健康打卡，结果如下 ', res['m'],self.reminders,self.DD_BOT_TOKEN,self.DD_BOT_SECRET)
                 wea,tem = get_weather()
-                ding=dingpush('早安，小07','今天杭州的天气是:{}\n当前温度:{}\n今天是我们在一起的第{}天\n{}'.format(wea,tem,get_count(),get_words()),self.reminders,self.DD_BOT_TOKEN,self.DD_BOT_SECRET)
+                ding= dingpush('今日小07已为你健康打卡，结果如下：{}'.format(res['m']), 早安，小07\n今天杭州的天气是:{}\n当前温度:{}\n今天是我们在一起的第{}天\n{}'.format(wea,tem,get_count(),get_words()) ,self.reminders,self.DD_BOT_TOKEN,self.DD_BOT_SECRET)
+                
                 ding.SelectAndPush()
             else:
                 print("钉钉推送未配置，请自行查看签到结果")
